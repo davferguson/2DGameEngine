@@ -20,8 +20,8 @@ public class CollisionHandler {
     public CollisionHandler(GamePanel gp){
         this.gp = gp;
         testRect = new Rectangle(100,100, GamePanel.TILE_SIZE, 1000);
-//        generateCollidableTiles();
-//        generateCollisionBoxes();
+        generateCollidableTiles();
+        generateCollisionBoxes();
         generateWorldBorders();
     }
     public boolean isColliding(int x, int y){
